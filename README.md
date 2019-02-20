@@ -35,7 +35,7 @@ $ conda install cookiecutter
 ### The resulting directory structure
 ------------
 
-The directory structure of your new project looks like this: 
+The directory structure of your new project looks like this:
 
 ```
 ├── LICENSE
@@ -49,16 +49,22 @@ The directory structure of your new project looks like this:
 │
 ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
 │
+├── literature         <- PDFs of relevant articles, particularly those in the lit review
+│
 ├── models             <- Trained and serialized models, model predictions, or model summaries
+│
+├── modules            <- Heavily commented code that can be used for training or publication purposes
 │
 ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
 │                         the creator's initials, and a short `-` delimited description, e.g.
 │                         `1.0-jqp-initial-data-exploration`.
 │
+├── output             <- Output coming directly from the code
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│   └── tables         <- Generated tables
+|
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
@@ -66,19 +72,12 @@ The directory structure of your new project looks like this:
 ├── src                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
 │   │
-│   ├── data           <- Scripts to download or generate data
+│   ├── build           <- Scripts to download or generate data
 │   │   └── make_dataset.py
 │   │
-│   ├── features       <- Scripts to turn raw data into features for modeling
-│   │   └── build_features.py
-│   │
-│   ├── models         <- Scripts to train models and then use trained models to make
-│   │   │                 predictions
-│   │   ├── predict_model.py
-│   │   └── train_model.py
-│   │
-│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-│       └── visualize.py
+│   ├── analyze         <- Scripts to run the analyses
+│      ├── predict_model.py
+│      └── train_model.py
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 ```
