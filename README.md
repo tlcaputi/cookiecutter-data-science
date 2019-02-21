@@ -72,10 +72,10 @@ The directory structure of your new project looks like this:
 ├── src                <- Source code for use in this project.
 │   ├── __init__.py    <- Makes src a Python module
 │   │
-│   ├── build           <- Scripts to download or generate data
+│   ├── data           <- Scripts to download or generate data
 │   │   └── make_dataset.py
 │   │
-│   ├── analyze         <- Scripts to run the analyses
+│   └── analyze         <- Scripts to run the analyses
 │      ├── predict_model.py
 │      └── train_model.py
 │
