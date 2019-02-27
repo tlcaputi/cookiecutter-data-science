@@ -17,11 +17,15 @@ Project Organization
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
+    ├── modules            <- Stylized code to show how the project was executed (e.g., training modules)
+    │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── literature         <- PDFs of relevant articles
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
